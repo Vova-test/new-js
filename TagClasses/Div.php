@@ -2,12 +2,9 @@
 
 namespace TagClasses;
 
+use TagClasses\BaseTag;
+
 class Div extends BaseTag
 {
-	private $tag = "div";
-	
-    public function div()
-    {
-        return "Hello Div";  
-    }
+	public $tag = "div";
 }

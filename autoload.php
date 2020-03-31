@@ -6,6 +6,4 @@
     define("DB_NAME", "lesson");
     //session_start();
     require_once(ROOT_PATH."/vendor/autoload.php");
-    use TagClasses\BaseTag;
-    var_dump();die(45);
-    
+    use TagClasses\BaseTag;    

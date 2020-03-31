@@ -4,24 +4,15 @@ namespace TagClasses;
 
 class BaseTag
 {
-    public $options = [];
-    public $class = [];
     public $id = '';
     public $name = '';
     public $value = '';
-    public $content =[];
+    public $class = [];
+    public $content =[];    
 
     public function init()
     {
         return "Hello BaseTag";  
-    }
-
-    public function addOption($value, $lable)
-    {
-        $this->options[] = [
-            'value' => $value,
-            'lable' => $lable
-        ];    
     }
 
     public function addId($id)
@@ -47,10 +38,5 @@ class BaseTag
     public function put($content)
     {
         $this->content[] = $content;
-    }
-
-    public function getString()
-    {
-
     }
 }

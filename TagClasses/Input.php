@@ -2,12 +2,9 @@
 
 namespace TagClasses;
 
+use TagClasses\BaseTag;
+
 class Input extends BaseTag
 {
-	private $tag = "input";
-	
-    public function input()
-    {
-        return "Hello Input";  
-    }
+	public $tag = "input";
 }

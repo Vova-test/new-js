@@ -2,12 +2,9 @@
 
 namespace TagClasses;
 
+use TagClasses\BaseTag;
+
 class Form extends BaseTag
 {
-	private $tag = "form";
-	
-    public function firm()
-    {
-        return "Hello Form";  
-    }
+	public $tag = "form";
 }

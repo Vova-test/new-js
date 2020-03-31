@@ -2,12 +2,18 @@
 
 namespace TagClasses;
 
+use TagClasses\BaseTag;
+
 class Select extends BaseTag
 {
-	private $tag = "select";
-	
-    public function select()
+	public $tag = "select";
+
+    public function addOption($value, $lable)
     {
-        return "Hello Select";  
+        $this->content[] = [
+        	'tag' => 'option',
+            'value' => $value,
+            'lable' => $lable
+        ];    
     }
 }
