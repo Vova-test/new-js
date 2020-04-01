@@ -25,8 +25,9 @@
             function getListContent(result) {
                 const fragment = new DocumentFragment();
                 for (const tagInfo of result) {
-                    if (tagInfo['tag'] === '') {
-                        fragment.append(tagInfo['content']);
+                    if (tagInfo['tag'] == '' || tagInfo['tag'] == undefined) {
+                        //console.log(result);
+                        fragment.append(tagInfo);
                     }
 
                     let tag = document.createElement(tagInfo['tag']);

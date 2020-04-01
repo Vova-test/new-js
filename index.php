@@ -20,6 +20,7 @@ if (!empty($_GET)) {
 	$select->addOption('value2', 'label2');
 	$select->addOption('value3', 'label3');
 
+	$div->addContent('My test select and add content');
 	$div->put($select);
 	$div->setId('div-15');
 	$div->setName('div-15');

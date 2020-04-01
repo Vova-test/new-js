@@ -39,4 +39,9 @@ class BaseTag
     {
         $this->content[] = $content;
     }
+
+    public function addContent($content)
+    {
+        $this->content[] = $content;
+    }
 }
