@@ -10,7 +10,7 @@
             async function loadPage() {
                 const mainDiv = document.getElementById('main-div');
                 try {
-                    const response = await fetch("http://new-js.loc/index.php?page=1", {
+                    const response = await fetch("http://new-js.loc/create-page.php", {
                         method: "GET"
                     });  
                     const result = await response.json();
