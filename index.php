@@ -7,10 +7,10 @@ define("ROOT_PATH", dirname(__FILE__));
 
 require_once(ROOT_PATH . "/vendor/autoload.php");
 
-if (!empty($_POST)) {
-	/*use TagClasses\Div; 
-	use TagClasses\Select;
+use TagClasses\Div; 
+use TagClasses\Select;
 
+if (!empty($_GET)) {
 	$page = [];
 
 	$div = new Div();
@@ -21,10 +21,16 @@ if (!empty($_POST)) {
 	$select->addOption('value3', 'label3');
 
 	$div->put($select);
+	$div->setId('div-15');
+	$div->setName('div-15');
+	$div->addClass('uk-card');
+	$div->addClass('uk-card-default');
+	$div->addClass('uk-card-hover');
+	//uk-card uk-card-default uk-card-hover
 
 	$page[] = $div;
-	echo json_encode($page);*/
-	echo 5;
+	echo json_encode($page);
+	return;
 }
-//echo json_encode($page);
+
 require_once(ROOT_PATH."/js_page.php");

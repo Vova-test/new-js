@@ -15,7 +15,7 @@ class BaseTag
         return "Hello BaseTag";  
     }
 
-    public function addId($id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -25,12 +25,12 @@ class BaseTag
         $this->class[] = $class;
     }
 
-    public function addName($name)
+    public function setName($name)
     {
         $this->name = $name;
     }
 
-    public function addValue($value)
+    public function setValue($value)
     {
         $this->value = $value;
     }

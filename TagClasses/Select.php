@@ -8,12 +8,12 @@ class Select extends BaseTag
 {
 	public $tag = "select";
 
-    public function addOption($value, $lable)
+    public function addOption($value, $label)
     {
         $this->content[] = [
         	'tag' => 'option',
             'value' => $value,
-            'lable' => $lable
+            'label' => $label
         ];    
     }
 }
