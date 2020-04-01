@@ -26,8 +26,8 @@
                 const fragment = new DocumentFragment();
                 for (const tagInfo of result) {
                     if (tagInfo['tag'] == '' || tagInfo['tag'] == undefined) {
-                        //console.log(result);
                         fragment.append(tagInfo);
+                        continue;
                     }
 
                     let tag = document.createElement(tagInfo['tag']);
